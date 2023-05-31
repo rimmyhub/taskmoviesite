@@ -1,74 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&display=swap');
-
-*{
-    font-family: 'Noto Sans KR', sans-serif;
-    box-sizing: border-box;}
-
-ul {
-    list-style-type: none;
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
 }
 
-.mytitle{
-    font-size: 30px;
-    font-weight: bold; 
-    text-align: center;
+ul {
+  list-style-type: none;
+}
+
+.mytitle {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* 검색창 정렬 */
-.wrap{
-    display :flex;
-    flex-direction: row;  
-    /* 세로정렬 column */
-    align-items: center;
-    justify-content: center;
+.wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-input, button {
-    padding:5px 10px;
-    margin: 5px;
+input,
+button {
+  padding: 5px 10px;
+  margin: 5px;
 }
-
 
 /* 리스트 정렬 */
-
 #list {
-    padding: 20px;
-    flex-direction: row;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    text-size-adjust: 10px;
-    font-size: 10px;
+  padding: 20px;
+  /* flex-direction: row; */
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: left;
+  text-size-adjust: 10px;
+  font-size: 10px;
 }
 
-.card-title, .card-overview, .card-average{
-    margin: 10px;
-}
-
-/* #list {
-    padding: 20px;
-    flex-direction: row;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-
-#list > li{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px 15px 10px 15px ;
-}
-
-#list > li > img{
-    background-size: cover;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.card-image{
-    width: 100%;
+#list > li {
+  width: 300px;
+  border: 1px solid #ccc;
   border-radius: 10px;
+  margin: 10px 15px 10px 15px;
+}
+
+#list > li > img {
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-title,
+.card-overview,
+.card-average {
+  margin: 10px;
 }

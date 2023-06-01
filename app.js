@@ -1,3 +1,4 @@
+// 영화 API가져와서 map함수로 영화 아이디, 개요, 타이틀, 평점 등 끌어왔습니다.
 const options = {
   method: "GET",
   headers: {
@@ -35,12 +36,14 @@ fetch(
     document.querySelector("#list").insertAdjacentHTML("beforeend", jointemp);
   });
 
-
+// 각 영화 리스트 선택 시 alert 팝업에 영화 아이디 노출하는 코드입니다.
 function showAlert(show) {
   let id = show.id;
   alert(`영화 아이디는 ${id} 입니다`);
 }
 
+// 검색 기능 동작, filter안에 데이터를 삽입하여 타이틀을 검색할 수 있게 했습니다.
+//대 소문자 구분 기능을 구현하지 못했습니다.
 function search (){
   let data = row[0]
   let input = document.querySelector('#search')

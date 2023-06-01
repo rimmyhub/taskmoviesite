@@ -1,3 +1,4 @@
+/* 폰트는 노트산스로 가져와서 통일하였습니다. */
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@500&display=swap");
 
 * {
@@ -15,7 +16,7 @@ ul {
   text-align: center;
 }
 
-/* 검색창 정렬 */
+/* 검색창 정렬 방법입니다.*/
 .wrap {
   display: flex;
   flex-direction: row;
@@ -29,15 +30,16 @@ button {
   margin: 5px;
 }
 
-/* 리스트 정렬 */
+/* 리스트 정렬 방법입니다.*/
+/* 중간 정렬이라 마지막 행이 중앙으로만 오는 이슈가 있었습니다. 반응형이기에 최선의 방법이었습니다.
+그래서 768px 값의 맥스값을 설정해주어 모바일 환경에 맞게 맞춰보려고 하였습니다.*/
 #list {
+  margin : 0 auto;
   padding: 20px;
-  /* flex-direction: row; */
   display: flex;
   flex-wrap: wrap;
   float: left;
-  /* grid-template-columns: repeat(3, 1fr); */
-  justify-content: left;
+  justify-content: center;
   text-size-adjust: 10px;
   font-size: 10px;
 }
@@ -62,5 +64,8 @@ button {
 .card-title,
 .card-overview,
 .card-average {
-  margin: 10px;
+  margin: 10px
 }
+
+
+@media (max-width:768px) {}
